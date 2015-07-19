@@ -1,0 +1,24 @@
+.features {
+	text-align: left;
+	background: #f7f7f7;
+	padding: 60px 0;
+	&__item {
+		float: left;
+		width: 350px;
+		padding: 0 30px;
+	}
+	&__header {
+		margin:0 0 30px;
+	}
+	&__title {
+		.header();
+	} 
+	&__desc {
+		.p(1.6rem, @blue, 1.6rem);
+	}
+	&__text {
+		display: block;
+		margin: 0 0 30px;
+		.p(1.4rem, @p-color, 2.2rem);
+	}
+}

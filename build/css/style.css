@@ -1,3 +1,4 @@
+@import "http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css";
 body,
 html {
   margin: 0;
@@ -38,6 +39,37 @@ input {
   padding: 0 40px;
   box-sizing: border-box;
 }
+.but {
+  background-color: #2abde9;
+  border-radius: 6px;
+  color: #ffffff;
+  height: 43px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 43px;
+  background: #3f4b51;
+  line-height: 46px;
+  padding: 0 13px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.but--mod {
+  background: #2abde9;
+  color: #fff;
+  font-size: 1.4rem;
+  height: 32px;
+  line-height: 32px;
+}
+.but--mod i {
+  font-size: 1.4rem;
+  line-height: 32px;
+}
+.but--features {
+  float: left;
+  margin-right: 20px;
+  background: #2abde9;
+  color: #fff;
+}
 .wrapper {
   margin: 0 auto;
   text-align: center;
@@ -77,6 +109,119 @@ input {
   font-weight: normal;
   font-style: normal;
 }
+.banner {
+  position: relative;
+  background: url("../img/banner-bg.jpg") no-repeat;
+  width: 1230px;
+  height: 490px;
+}
+.banner__left {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 30px;
+  top: 50%;
+  background: url("../img/left.png") no-repeat;
+}
+.banner__right {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  right: 30px;
+  background: url("../img/right.png") no-repeat;
+}
+.features {
+  text-align: left;
+  background: #f7f7f7;
+  padding: 60px 0;
+}
+.features__item {
+  float: left;
+  width: 350px;
+  padding: 0 30px;
+}
+.features__header {
+  margin: 0 0 30px;
+}
+.features__title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #3f4b51;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.features__desc {
+  font-size: 1.6rem;
+  color: #2abde9;
+  line-height: 1.6rem;
+  font-family: sanspro;
+}
+.features__text {
+  display: block;
+  margin: 0 0 30px;
+  font-size: 1.4rem;
+  color: #8d8c8c;
+  line-height: 2.2rem;
+  font-family: sanspro;
+}
+.footer {
+  margin: 40px 0 0 0;
+  background: #3f4b51;
+}
+.footer__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.footer__nav-wrap {
+  margin: 60px 15px 70px;
+  display: inline-block;
+  width: 170px;
+  text-align: left;
+}
+.footer__nav-header {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+.footer__nav-item {
+  border-bottom: 1px solid #4c5b61;
+  padding: 10px 0;
+}
+.footer__nav-item:last-child {
+  border-bottom: none;
+}
+.footer__link {
+  font-size: 1.4rem;
+  color: #8099a1;
+  line-height: auto;
+  font-family: sanspro;
+}
+.copy {
+  background: #364045;
+}
+.copy-wrap {
+  width: 1170px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+.copy__text {
+  font-size: 1.4rem;
+  color: #8d8c8c;
+  line-height: 2.6rem;
+  font-family: sanspro;
+  margin: 40px 0;
+}
+.copy__text-link {
+  color: #2abde9;
+}
 .nav {
   background: #2abde9;
   height: 70px;
@@ -106,6 +251,83 @@ input {
 .nav__link--active {
   background: #55caed;
   border-left: none;
+}
+.team {
+  text-align: center;
+  padding: 0 0 65px 0;
+}
+.team__head {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #3f4b51;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 60px 0 0 0;
+}
+.team__desc {
+  font-size: 1.6rem;
+  color: #8d8c8c;
+  line-height: 2.6rem;
+  font-family: sanspro;
+}
+.team__desc:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px solid #dedede;
+  margin: 15px auto 40px;
+}
+.users {
+  display: inline-block;
+}
+.users__item {
+  float: left;
+  width: 170px;
+  margin: 0 17px;
+  padding: 190px 0 0 0;
+}
+.users__item--user1 {
+  background: url("../img/user1.png") no-repeat;
+}
+.users__item--user2 {
+  background: url("../img/user2.png") no-repeat;
+}
+.users__item--user3 {
+  background: url("../img/user3.png") no-repeat;
+}
+.users__header {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #2abde9;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: auto;
+}
+.users__desc {
+  font-size: 1.4rem;
+  color: #8d8c8c;
+  line-height: auto;
+  font-family: sanspro;
+}
+.title {
+  margin: 0 0 40px 0;
+}
+.title__header {
+  font-size: 3rem;
+  color: #3f4b51;
+  text-transform: uppercase;
+  margin: 40px 0 0 0;
+  font-weight: normal;
+}
+.title__desc {
+  font-size: 1.6rem;
+  color: #3f4b51;
+  line-height: 2.2rem;
+  font-family: sanspro;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
 }
 .top {
   background: #3f4b51;

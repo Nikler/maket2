@@ -29,6 +29,31 @@ input {
 	padding: 0 40px;
 	box-sizing: border-box;
 }
+.but {
+	.buts(#fff, 6px, 43px, 2rem);
+	background: @h-color;
+	line-height: 46px;
+	padding: 0 13px;
+	text-transform: uppercase;
+	display: inline-block;
+	&--mod {
+		background: @blue;
+		color: #fff;
+		font-size: 1.4rem;
+		height: 32px;
+		line-height: 32px;
+		& i {
+			font-size: 1.4rem;
+			line-height: 32px;
+		}
+	}
+	&--features {
+		float: left;
+		margin-right: 20px;
+		background: @blue;
+		color: #fff;
+	}
+}
 .wrapper {
 	margin: 0 auto;
 	text-align: center;
