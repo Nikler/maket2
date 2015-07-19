@@ -1,0 +1,38 @@
+.top {
+	background: @h-color;
+	height: 70px;
+	&__logo {
+		float: left;
+		font-size: 3rem;
+		line-height: 7rem;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	&__elements {
+		float: right;
+		padding: 20px 0 0 0;
+	}
+}
+.search {
+	float: right;
+	margin-left: 10px;
+	&__but {
+		.buts(#7c878b, 5px ,36px ,2rem);
+		background: transparent;
+		width: 36px;
+		border: none;
+		margin-left: -38px;
+		padding: 0;
+		cursor: pointer;
+	}
+}
+.social {
+	float: left;
+	&__item {
+		.buts(#7c878b, 5px ,36px ,2rem);
+		width: 36px;
+		float:left;
+		margin-left: 8px;
+		background: #364045;
+	}
+}
