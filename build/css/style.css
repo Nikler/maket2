@@ -23,6 +23,9 @@ i {
   font-family: FontAwesome;
   font-style: normal;
 }
+button {
+  outline: none;
+}
 input {
   background-color: #2abde9;
   border-radius: 5px;
@@ -39,6 +42,9 @@ input {
   padding: 0 40px;
   box-sizing: border-box;
 }
+input:focus {
+  outline: none;
+}
 .but {
   background-color: #2abde9;
   border-radius: 6px;
@@ -52,6 +58,16 @@ input {
   padding: 0 13px;
   text-transform: uppercase;
   display: inline-block;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
+}
+.but:hover {
+  background: #2abde9;
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
 }
 .but--mod {
   background: #2abde9;
@@ -59,6 +75,11 @@ input {
   font-size: 1.4rem;
   height: 32px;
   line-height: 32px;
+}
+.but--mod:hover {
+  background: #55caed;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
 }
 .but--mod i {
   font-size: 1.4rem;
@@ -123,6 +144,13 @@ input {
   left: 30px;
   top: 50%;
   background: url("../img/left.png") no-repeat;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
+}
+.banner__left:hover {
+  opacity: .5;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
 }
 .banner__right {
   display: block;
@@ -132,11 +160,20 @@ input {
   top: 50%;
   right: 30px;
   background: url("../img/right.png") no-repeat;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
+}
+.banner__right:hover {
+  opacity: .2;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
 }
 .features {
   text-align: left;
   background: #f7f7f7;
   padding: 60px 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .features__item {
   float: left;
@@ -204,6 +241,9 @@ input {
   line-height: auto;
   font-family: sanspro;
 }
+.footer__link:hover {
+  color: #fff;
+}
 .copy {
   background: #364045;
 }
@@ -247,6 +287,16 @@ input {
   display: block;
   border-left: 1px solid #55caed;
   border-right: 1px solid #55caed;
+  -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in;
+}
+.nav__link:hover {
+  background: #55caed;
+  -webkit-transform: translate(0, -5px);
+      -ms-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+  -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in;
 }
 .nav__link--active {
   background: #55caed;
@@ -363,6 +413,11 @@ input {
   padding: 0;
   cursor: pointer;
 }
+.search__but:hover {
+  color: #fff;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
+}
 .social {
   float: left;
 }
@@ -378,4 +433,10 @@ input {
   float: left;
   margin-left: 8px;
   background: #364045;
+}
+.social__item:hover {
+  background: #7c878b;
+  color: #364045;
+  -webkit-transition: all 0.15s ease-in;
+          transition: all 0.15s ease-in;
 }

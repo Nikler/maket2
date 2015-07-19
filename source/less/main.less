@@ -19,6 +19,9 @@ i {
 	font-family: FontAwesome;
 	font-style: normal;
 }
+button {
+	outline: none;
+}
 input {
 	.buts(#7c878b, 5px ,36px ,2rem);
 	width: 220px;
@@ -28,6 +31,9 @@ input {
 	text-align: left;
 	padding: 0 40px;
 	box-sizing: border-box;
+	&:focus {
+		outline: none;
+	};
 }
 .but {
 	.buts(#fff, 6px, 43px, 2rem);
@@ -36,12 +42,22 @@ input {
 	padding: 0 13px;
 	text-transform: uppercase;
 	display: inline-block;
+	transition: all 0.15s ease-in;
+	&:hover{
+			background: @blue;
+			transform: scale(1.02);
+			transition: all 0.15s ease-in;
+		}
 	&--mod {
 		background: @blue;
 		color: #fff;
 		font-size: 1.4rem;
 		height: 32px;
 		line-height: 32px;
+		&:hover{
+			background: #55caed;
+			transition: all 0.15s ease-in;
+		}	
 		& i {
 			font-size: 1.4rem;
 			line-height: 32px;
