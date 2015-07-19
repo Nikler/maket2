@@ -1,0 +1,30 @@
+.nav {
+	background: @blue;
+	height: 70px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	text-align: center;
+	&__items {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+	&__item {
+		float: left;
+	}
+	&__link {
+		color: #fff;
+		width: 100px;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		line-height: 70px;
+		display: block;
+		border-left: 1px solid #55caed;
+		border-right: 1px solid #55caed;
+		&--active {
+			background: #55caed;
+			border-left: none;
+		}
+	}
+}
